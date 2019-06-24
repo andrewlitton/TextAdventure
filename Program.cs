@@ -6,7 +6,7 @@ namespace DrewsFirstProject
     {
         static void Main(string[] args)
         {            
-            Console.WriteLine("Let's play trivia!");
+            Console.WriteLine("Let's play sports trivia!");
             Console.WriteLine("What's your name?");
 
             string nameResponse = Console.ReadLine();
@@ -27,7 +27,7 @@ namespace DrewsFirstProject
             Console.WriteLine();
             Console.WriteLine("Press Enter to continue.");
             Console.ReadLine();
-            Console.WriteLine("Here's your first question:");
+            Console.WriteLine("Here's your first question" + nameResponse + ":");
             Console.WriteLine("(Choose a lower case letter)");
             Console.WriteLine();
             do
@@ -46,7 +46,7 @@ namespace DrewsFirstProject
                 }
                 else
                 {
-                    Console.WriteLine("Wow! You're smart! Give yourself a point!");
+                    Console.WriteLine("Wow! You're smart " + nameResponse + "!" + "Give yourself a point!");
                 }
             }
             while (response != "c");
@@ -105,6 +105,61 @@ namespace DrewsFirstProject
             }
             while (response != "b");
             Console.WriteLine();
+            Console.WriteLine("Press Enter to Continue");
+            Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine("You're getting smarter - I can feel it.  Here's the fourth question:");
+            Console.WriteLine("(Choose a lower case letter)");
+            Console.WriteLine();
+            do
+            {
+                Console.WriteLine("Which major tennis tournament is known for its red clay court surface?");
+                Console.WriteLine("a. Australian Open");
+                Console.WriteLine("b. Wimbledon");
+                Console.WriteLine("c. US Open");
+                Console.WriteLine("d. French Open");
+                Console.WriteLine();
+                response = Console.ReadLine();
+                if (response != "d")
+                {
+                    Console.WriteLine("That's Incorrect!");
+                    Console.WriteLine("Try again.");
+                }
+                else
+                {
+                    Console.WriteLine("Oui Oui! Ace! Give yourself a point!");
+                }
+            }
+            while (response != "d");
+            Console.WriteLine();
+            Console.WriteLine("Press Enter to Continue");
+            Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine("Let's see if you can finish strongly with question five:");
+            Console.WriteLine("(Choose a lower case letter)");
+            Console.WriteLine();
+            do
+            {
+                Console.WriteLine("MTV first aired a show in 2006 centered around the Hoover High School football team.  What was it called?");
+                Console.WriteLine("a. Two-A-Days");
+                Console.WriteLine("b. The Locker Room");
+                Console.WriteLine("c. A Season to Remember");
+                Console.WriteLine("d. Friday Night Lights");
+                Console.WriteLine();
+                response = Console.ReadLine();
+                if (response != "a")
+                {
+                    Console.WriteLine("That's Incorrect!");
+                    Console.WriteLine("Try again.");
+                }
+                else
+                {
+                    Console.WriteLine("Wow, " + nameResponse + "with the hail mary! Give yourself a point!");
+                }
+            }
+            while (response != "a");
+            Console.WriteLine();
+
 
 
 
