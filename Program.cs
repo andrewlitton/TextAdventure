@@ -154,26 +154,33 @@ namespace DrewsFirstProject
                 }
                 else
                 {
-                    Console.WriteLine("Wow, " + nameResponse + "with the hail mary! Give yourself a point!");
+                    Console.WriteLine("Wow, " + nameResponse + " with the hail mary! Give yourself a point!");
                 }
             }
             while (response != "a");
             Console.WriteLine();
+            Console.WriteLine("Alright Vanna, show us what " + nameResponse + " has won!");
+            Console.WriteLine("Oops, wrong game.");
 
+            Console.WriteLine("Press Enter to continue.");
+            Console.ReadKey();
 
+            Console.WriteLine();
+            Console.WriteLine("How many points did you score, " + nameResponse + "?");
 
-
-
-
-
-
-
-
-
-
-
-
-
+            string finalScoreAsAString = Console.ReadLine();
+            int finalScore = int.Parse(finalScoreAsAString);
+                        
+            if (finalScore <= 3)
+            {
+                Console.WriteLine("Ouch! Better luck next time, " + nameResponse + ".");
+            }
+            else
+            {
+                Console.WriteLine("Not too shabby, " + nameResponse + "." + " Four out of five is somethin' to be proud of, indeed!");
+            }
+            
+                                 
         }
     }
 }
