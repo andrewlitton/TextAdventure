@@ -11,7 +11,7 @@ namespace DrewsFirstProject
 
             string nameResponse = Console.ReadLine();
 
-            Console.WriteLine("Welcome! Nice to meet you," + " " + nameResponse + "!");
+            Console.WriteLine("Welcome! Nice to meet you, " + nameResponse + "!");
             Console.WriteLine();
             Console.WriteLine("Are you ready for your first question?");
             string response = Console.ReadLine();
@@ -27,7 +27,7 @@ namespace DrewsFirstProject
             Console.WriteLine();
             Console.WriteLine("Press Enter to continue.");
             Console.ReadLine();
-            Console.WriteLine("Here's your first question" + nameResponse + ":");
+            Console.WriteLine("Here it is, " + nameResponse + ":");
             Console.WriteLine("(Choose a lower case letter)");
             Console.WriteLine();
             do
@@ -43,10 +43,11 @@ namespace DrewsFirstProject
                 {
                     Console.WriteLine("That's Incorrect!");
                     Console.WriteLine("Try again.");
+                    Console.WriteLine();
                 }
                 else
                 {
-                    Console.WriteLine("Wow! You're smart " + nameResponse + "!" + "Give yourself a point!");
+                    Console.WriteLine("Wow! You're smart, " + nameResponse + "!" + " Give yourself a point!");
                 }
             }
             while (response != "c");
@@ -70,6 +71,7 @@ namespace DrewsFirstProject
                 {
                     Console.WriteLine("That's Incorrect!");
                     Console.WriteLine("Try again.");
+                    Console.WriteLine();
                 }
                 else
                 {
@@ -97,6 +99,7 @@ namespace DrewsFirstProject
                 {
                     Console.WriteLine("That's Incorrect!");
                     Console.WriteLine("Try again.");
+                    Console.WriteLine();
                 }
                 else
                 {
@@ -124,6 +127,7 @@ namespace DrewsFirstProject
                 {
                     Console.WriteLine("That's Incorrect!");
                     Console.WriteLine("Try again.");
+                    Console.WriteLine();
                 }
                 else
                 {
@@ -151,6 +155,7 @@ namespace DrewsFirstProject
                 {
                     Console.WriteLine("That's Incorrect!");
                     Console.WriteLine("Try again.");
+                    Console.WriteLine();
                 }
                 else
                 {
@@ -161,7 +166,7 @@ namespace DrewsFirstProject
             Console.WriteLine();
             Console.WriteLine("Alright Vanna, show us what " + nameResponse + " has won!");
             Console.WriteLine("Oops, wrong game.");
-
+            Console.WriteLine();
             Console.WriteLine("Press Enter to continue.");
             Console.ReadKey();
 
@@ -175,12 +180,13 @@ namespace DrewsFirstProject
             {
                 Console.WriteLine("Ouch! Better luck next time, " + nameResponse + ".");
             }
-            else
+            else 
             {
-                Console.WriteLine("Not too shabby, " + nameResponse + "." + " Four out of five is somethin' to be proud of, indeed!");
+                Console.WriteLine("Not too shabby, " + nameResponse + "!");
             }
-            
-                                 
+
+            Console.WriteLine();
+            Console.WriteLine("I hope you've had fun. Thanks for playing!");
         }
     }
 }
